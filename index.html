@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f7f1e8">
+<title>基隆 一日遊</title>
+<style>
+:root{--c:#1d5b8a;--c2:#3f9cc6;--tint:#e5f0f8}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Noto Sans CJK TC","Microsoft JhengHei",sans-serif;font-size:20px;line-height:1.6;color:#2b2622;background:#f7f1e8;-webkit-font-smoothing:antialiased}
+body{padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+main{max-width:560px;margin:0 auto;padding:32px 18px 44px}
+h1{font-size:30px;font-weight:800;letter-spacing:.08em;text-align:center;margin:0 0 26px;color:#3a2f27}
+h1::after{content:"";display:block;width:44px;height:4px;border-radius:4px;margin:12px auto 0;background:linear-gradient(90deg,#3f9cc6,#1d5b8a,#f2a05a)}
+.day{background:#fff;border-radius:26px;overflow:hidden;margin:0 0 26px;box-shadow:0 10px 30px rgba(80,55,30,.10),0 2px 6px rgba(80,55,30,.06)}
+.okinawa{--c:#cf5536;--c2:#f0906f;--tint:#fdeee8}
+.ishigaki{--c:#245f9e;--c2:#4f9bd6;--tint:#e8f0fa}
+.hero{position:relative;padding:26px 24px 52px;color:#fff;background:linear-gradient(135deg,var(--c2) 0%,var(--c) 100%)}
+.sun{position:absolute;top:-14px;right:-14px;width:120px;height:120px}
+.wave{position:absolute;left:0;bottom:-1px;width:100%;height:40px;display:block}
+.d{position:relative;margin:0;font-size:21px;font-weight:700;opacity:.95;letter-spacing:.03em}
+h2{position:relative;margin:0;font-size:40px;line-height:1.25;font-weight:800;letter-spacing:.06em;text-shadow:0 1px 8px rgba(0,0,0,.12)}
+.tr{position:relative;display:inline-block;margin:12px 0 0;padding:4px 16px;font-size:20px;font-weight:700;background:rgba(255,255,255,.24);border-radius:999px}
+.body{padding:6px 18px 20px}
+.tip{margin:0 4px 14px;font-size:19px;color:#5a4f47;line-height:1.55}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:108px;padding:12px 6px;background:#fff;border:2px solid var(--tint);border-radius:20px;text-decoration:none;color:#2b2622;box-shadow:0 3px 10px rgba(80,55,30,.07);transition:transform .12s,box-shadow .12s,background .12s;-webkit-tap-highlight-color:transparent}
+.btn:last-child:nth-child(odd){grid-column:1 / -1}
+.btn .em{font-size:38px;line-height:1.2}
+.btn .lb{font-size:22px;font-weight:800;color:var(--c);letter-spacing:.08em}
+.btn:active{transform:scale(.96);background:var(--tint);box-shadow:0 1px 4px rgba(80,55,30,.08)}
+.btn:focus-visible{outline:3px solid var(--c);outline-offset:2px}
+.foot{margin:6px 8px 0;padding:16px 18px;font-size:19px;line-height:1.6;color:#5a4f47;text-align:center;background:#efe6d8;border-radius:18px}
+
+.near{display:flex;align-items:center;justify-content:center;touch-action:manipulation;width:100%;min-height:76px;margin:4px 0 14px;padding:12px;border:0;border-radius:20px;background:linear-gradient(135deg,var(--c2),var(--c));color:#fff;font:inherit;font-size:24px;font-weight:800;letter-spacing:.06em;box-shadow:0 6px 16px rgba(80,55,30,.16);cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .12s}
+.near:active{transform:scale(.97)}
+.sheet{position:fixed;top:0;right:0;bottom:0;left:0;width:100%;height:100%;z-index:2147483000;display:none;background:rgba(43,38,34,.55);-webkit-tap-highlight-color:transparent}
+.sheet.open{display:block}
+.panel{position:absolute;top:calc(56px + env(safe-area-inset-top));right:0;bottom:0;left:0;max-width:560px;margin:0 auto;background:#f7f1e8;display:-webkit-box;display:flex;-webkit-box-orient:vertical;flex-direction:column;border-radius:24px 24px 0 0;overflow:hidden}
+.ph{flex:0 0 auto;padding:16px 18px 14px;color:#fff;background:linear-gradient(135deg,var(--c2),var(--c))}
+.pt{display:block}
+.pt h3{margin:0;font-size:26px;font-weight:800;letter-spacing:.04em}
+.x{position:fixed;left:calc(14px + env(safe-area-inset-left));right:calc(14px + env(safe-area-inset-right));bottom:calc(12px + env(safe-area-inset-bottom));z-index:2147483647;display:block;width:auto;max-width:532px;margin:0 auto;min-height:72px;padding:0 18px;border:3px solid #fff;border-radius:22px;background:#2b2622;color:#fff;font:inherit;font-size:25px;font-weight:800;letter-spacing:.2em;box-shadow:0 6px 20px rgba(0,0,0,.35);cursor:pointer;pointer-events:auto;touch-action:manipulation;-webkit-appearance:none;appearance:none}
+.x:active{transform:scale(.95)}
+.chips{display:flex;flex-wrap:wrap;margin:8px -4px 0}
+.chip{margin:4px;min-height:48px;touch-action:manipulation;padding:6px 14px;border:2px solid rgba(255,255,255,.6);border-radius:999px;background:transparent;color:#fff;font:inherit;font-size:19px;font-weight:700;cursor:pointer}
+.chip.on{background:#fff;color:var(--c);border-color:#fff}
+.pb{flex:1 1 auto;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:14px 14px calc(112px + env(safe-area-inset-bottom))}
+.msg{margin:0 4px 12px;padding:12px 16px;border-radius:16px;background:#fff;font-size:19px;line-height:1.55;color:#5a4f47}
+.msg.warn{background:#fff3d6;color:#6b4b00}
+.msg b{color:#2b2622}
+.alt{display:block;width:100%;min-height:68px;margin:10px 0 0;border:0;border-radius:18px;background:var(--c);color:#fff;font:inherit;font-size:22px;font-weight:800;cursor:pointer}
+.row{display:flex;align-items:center;margin:0 0 10px;padding:14px 14px;background:#fff;border-radius:18px;text-decoration:none;color:#2b2622;box-shadow:0 3px 10px rgba(80,55,30,.07);-webkit-tap-highlight-color:transparent;transition:transform .12s}
+.row:active{transform:scale(.98);background:var(--tint)}
+.ri{flex:0 0 auto;margin-right:12px;font-size:34px;line-height:1}
+.rm{flex:1 1 auto;min-width:0}
+.rn{display:block;font-size:21px;font-weight:800;line-height:1.35}
+.rnote{display:block;font-size:19px;color:#5a4f47;line-height:1.45;margin-top:2px}
+.rd{flex:0 0 auto;margin-left:10px;text-align:right;font-size:20px;font-weight:800;color:var(--c);white-space:nowrap}
+.rd small{display:block;font-size:17px;font-weight:700;color:#8a7d72}
+html.lock,html.lock body{overflow:hidden}
+.tips{list-style:none;margin:4px 2px 14px;padding:0}
+.tips li{font-size:20px;line-height:1.5;color:#3a2f27;padding:8px 0}
+.tips li+li{border-top:1px solid #f0e6da}
+.tips b{color:var(--c)}
+.star{color:#e0a100;margin-right:4px}
+.rarea{display:inline-block;margin-left:6px;padding:0 8px;border-radius:8px;background:var(--tint);color:var(--c);font-size:16px;font-weight:700;vertical-align:2px}
+</style></head><body><main>
+<h1>基隆</h1>
+<section class="day"><header class="hero"><svg class="sun" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="22" fill="rgba(255,255,255,.35)"/><g stroke="rgba(255,255,255,.3)" stroke-width="4" stroke-linecap="round"><path d="M50 8v12M50 80v12M8 50h12M80 50h12M20 20l8 8M72 72l8 8M80 20l-8 8M28 72l-8 8"/></g></svg><p class="d">一日遊・8人</p><h2>基隆</h2><p class="tr">🚗 開車一日遊</p><svg class="wave" viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 22 C50 6 100 6 150 20 S250 36 300 20 S370 8 400 18 V40 H0Z" fill="#fff"/><path d="M0 28 C60 16 120 18 170 28 S280 38 330 26 S385 20 400 24" fill="none" stroke="rgba(255,255,255,.45)" stroke-width="2"/></svg></header>
+<div class="body"><ul class="tips"><li>🅿️ 假日廟口、正濱、海科館<b>車位易滿</b>，先導航到停車場再走路</li><li>🗺️ 八斗子、正濱、外木山<b>分開走</b>，別一天全塞</li></ul>
+<button class="near" type="button">📍 離我最近</button>
+<div class="btns"><a class="btn" data-cat="小吃" href="#" role="button"><span class="em">🍢</span><span class="lb">小吃</span></a><a class="btn" data-cat="餐廳" href="#" role="button"><span class="em">🍽️</span><span class="lb">餐廳</span></a><a class="btn" data-cat="景點" href="#" role="button"><span class="em">🏛️</span><span class="lb">景點</span></a><a class="btn" data-cat="購物" href="#" role="button"><span class="em">🛍️</span><span class="lb">購物</span></a><a class="btn" data-cat="伴手禮" href="#" role="button"><span class="em">🎁</span><span class="lb">伴手禮</span></a><a class="btn" data-cat="停車場" href="#" role="button"><span class="em">🅿️</span><span class="lb">停車場</span></a></div></div></section>
+<p class="foot">收藏不是訂位，假日停車場易滿，8人可能要分桌。</p>
+</main><div id="sheet" class="sheet" role="dialog" aria-modal="true"><div class="panel"><div class="ph"><div class="pt"><h3 id="st"></h3></div><div class="chips" id="chips"></div></div><div class="pb" id="sb"></div></div><button class="x" id="sx" type="button">關閉</button></div>
+<script>
+/* ===== Google Maps 合集連結：把分享連結貼在引號內即可（空白＝按鈕先顯示網站內清單） ===== */
+var MAPS={"小吃": "", "餐廳": "", "景點": "", "購物": "", "伴手禮": "", "停車場": ""};
+/* ===== 以上 ===== */
+var SITE={"chips": ["全部", "小吃", "餐廳", "景點", "購物", "伴手禮", "停車場"], "orig": {"mk": {"n": "基隆廟口停車場（ViVi PARK）", "label": "廟口停車場", "p": [25.1288, 121.7425], "ic": "🅿️"}, "nm": {"n": "海科館（海洋劇場停車場）", "label": "海科館", "p": [25.142518, 121.800231], "ic": "🐟"}}, "walk": 500, "far": 20000, "farMsg": "你還不在基隆，距離僅供參考。", "mode": "driving", "modeLabel": "🚗 開車", "ic": {"小吃": "🍢", "餐廳": "🍽️", "景點": "🏛️", "購物": "🛍️", "伴手禮": "🎁", "停車場": "🅿️"}};
+</script>
+<script type="application/json" id="places">[{"c":["小吃"],"n":"天盛舖營養三明治","t":"炸麵包夾火腿蛋番茄，排隊最長","y":25.12806,"x":121.74438,"a":"仁愛"},{"c":["小吃"],"n":"邢記鼎邊趖","t":"基隆代表小吃，米漿鍋邊片＋羹料，熱湯適合長輩","y":25.1284,"x":121.7435,"a":"仁愛"},{"c":["小吃"],"n":"王記天婦羅","t":"現炸魚漿天婦羅，邊走邊吃","y":25.1283,"x":121.7438,"a":"仁愛"},{"c":["小吃"],"n":"吳記螃蟹羹油飯","t":"螃蟹羹＋油飯一套，料多","y":25.1285,"x":121.7432,"a":"仁愛"},{"c":["小吃"],"n":"天一香肉羹順","t":"滷肉飯＋肉羹「一套」，平價老攤","y":25.1284,"x":121.7434,"a":"仁愛"},{"c":["小吃"],"n":"沈記泡泡冰","t":"古早味泡泡冰，綠豆沙牛乳／花生","y":25.1283,"x":121.7437,"a":"仁愛"},{"c":["小吃"],"n":"陳記泡泡冰創始店","t":"另一家手工泡泡冰，可與沈記擇一或各買半份","y":25.1282,"x":121.7439,"a":"仁愛"},{"c":["小吃"],"n":"廟口花枝羹．大麵炒","t":"花枝羹＋蒜香大麵炒","y":25.1282,"x":121.7438,"a":"仁愛"},{"c":["小吃"],"n":"刈包、四神湯","t":"刈包可指定肥瘦","y":25.1281,"x":121.7441,"a":"仁愛"},{"c":["小吃"],"n":"廟口自製大腸圈","t":"大腸圈＋吉古拉（基隆魚漿），早上就開","y":25.1286,"x":121.743,"a":"仁愛"},{"c":["小吃"],"n":"基隆廟口炭燒蚵仔煎","t":"炭燒香蚵仔煎，份量足、價稍高","y":25.1283,"x":121.7436,"a":"仁愛"},{"c":["小吃"],"n":"世盛一口吃香腸","t":"小香腸配蒜頭，小孩也愛","y":25.1282,"x":121.744,"a":"仁愛"},{"c":["小吃"],"n":"一口吃天婦羅","t":"小片魚漿炸物，沾醬吃","y":25.1282,"x":121.744,"a":"仁愛"},{"c":["小吃"],"n":"阿華炒麵","t":"愛四路網紅什錦咖哩炒麵","y":25.1285,"x":121.7442,"a":"仁愛"},{"c":["小吃"],"n":"基隆廟口碳烤三明治","t":"炭烤吐司三明治，與炸營養三明治不同風味","y":25.1286,"x":121.744,"a":"仁愛"},{"c":["小吃"],"n":"廟口魯排骨","t":"咖哩香魯排骨飯，可外帶便當","y":25.1284,"x":121.7433,"a":"仁愛"},{"c":["小吃"],"n":"蝦仁羹豬腳蹄膀","t":"豬腳蹄膀＋蝦仁羹，軟嫩好入口","y":25.1284,"x":121.7434,"a":"仁愛"},{"c":["小吃"],"n":"魯肉飯專家","t":"平價滷肉飯","y":25.1283,"x":121.7435,"a":"仁愛"},{"c":["小吃"],"n":"陳家壽司生魚飯","t":"壽司／生魚飯輕食，愛四路側","y":25.1287,"x":121.7439,"a":"仁愛"},{"c":["餐廳","伴手禮"],"n":"漁品軒海鮮木桶魚餐廳","t":"海科館區域探索館樓上，合菜適合8人","y":25.141,"x":121.7954,"a":"中正"},{"c":["餐廳"],"n":"海之星海鮮 百元熱炒","t":"碧砂旁平價熱炒，可 LINE 訂位","y":25.142,"x":121.797,"a":"中正"},{"c":["餐廳"],"n":"麻江湖火鍋-基隆廟口店","t":"評價高火鍋，8人較好坐","y":25.12891,"x":121.74406,"a":"仁愛"},{"c":["餐廳"],"n":"架大碗海鮮粥•麵","t":"海鮮粥麵料多，市區好找","y":25.13269,"x":121.74583,"a":"中正"},{"c":["餐廳"],"n":"阿不拉海鮮","t":"在地海鮮好評","y":25.12746,"x":121.73659,"a":"仁愛"},{"c":["餐廳"],"n":"輕鬆宴海鮮景觀餐廳","t":"港區合菜、份量足","y":25.12956,"x":121.74184,"a":"仁愛"},{"c":["餐廳"],"n":"松山活海鮮","t":"廟口旁海鮮，晚間營業","y":25.12864,"x":121.74383,"a":"仁愛"},{"c":["餐廳"],"n":"叁坪 Sanpin","t":"正濱彩色屋日式海鮮定食","y":25.1525,"x":121.765,"a":"中正"},{"c":["餐廳"],"n":"傻大姐海景餐廳","t":"潮境／八斗子海景熱炒","y":25.1429,"x":121.8027,"a":"中正"},{"c":["餐廳"],"n":"環港59活海鮮","t":"正濱—和平島動線海鮮","y":25.15,"x":121.768,"a":"中正"},{"c":["餐廳"],"n":"雞籠海鮮樓","t":"有包廂適合8人","y":25.133,"x":121.744,"a":"中正"},{"c":["餐廳"],"n":"小泉海產店","t":"車站一帶老字號熱炒","y":25.134,"x":121.74,"a":"中山"},{"c":["餐廳"],"n":"安一五郎海鮮店","t":"無菜單老店，先問價","y":25.145,"x":121.735,"a":"中山"},{"c":["餐廳"],"n":"南北小吃","t":"古早味海鮮小館","y":25.129,"x":121.742,"a":"仁愛"},{"c":["餐廳"],"n":"星巴克","t":"連鎖咖啡休息點，廁所方便","y":25.131161,"x":121.744707,"a":"中正"},{"c":["餐廳","伴手禮"],"n":"東岸廣場美食街／連鎖餐廳","t":"商場內多店可選，**同棟有停車場**最省事","y":25.131,"x":121.7415,"a":"仁愛"},{"c":["景點"],"n":"國立海洋科技博物館","t":"親子室內首選","y":25.142518,"x":121.800231,"a":"中正"},{"c":["景點"],"n":"潮境智能海洋館","t":"水族館展覽，週二–日","y":25.1434,"x":121.8034,"a":"中正"},{"c":["景點"],"n":"潮境公園","t":"海景裝置與步道，免費","y":25.143411,"x":121.803391,"a":"中正"},{"c":["景點"],"n":"基隆美術館","t":"2026 有基隆400系列展","y":25.1315,"x":121.744,"a":"中正"},{"c":["景點"],"n":"基隆故事館","t":"港都故事常設／特展，室內好走","y":25.1315,"x":121.744,"a":"中正"},{"c":["景點","伴手禮"],"n":"陽明海洋文化藝術館","t":"古蹟建築＋海運互動展","y":25.132603,"x":121.740093,"a":"仁愛"},{"c":["景點"],"n":"基隆塔","t":"高空廊道看港","y":25.132779,"x":121.746985,"a":"中正"},{"c":["景點"],"n":"鳶書店","t":"高空選書＋輕食","y":25.1328,"x":121.747,"a":"中正"},{"c":["景點"],"n":"崆書屋 House K","t":"山坡書屋咖啡景觀","y":25.1312,"x":121.7462,"a":"中正"},{"c":["景點"],"n":"信二防空洞","t":"防空洞展覽路線，涼爽避雨","y":25.131157,"x":121.746151,"a":"中正"},{"c":["景點"],"n":"必應創作展演空間","t":"文創展演空間","y":25.136,"x":121.752,"a":"中正"},{"c":["景點"],"n":"基隆要塞司令官邸","t":"古蹟空間展覽，週三–日","y":25.140464,"x":121.758274,"a":"中正"},{"c":["景點"],"n":"要塞司令部校官眷舍","t":"依活動開放","y":25.137,"x":121.753,"a":"中正"},{"c":["景點"],"n":"正濱漁港色彩屋","t":"彩色屋拍照","y":25.1524,"x":121.764854,"a":"中正"},{"c":["景點"],"n":"阿根納造船廠遺構","t":"只可外圍步道看，禁止進入內部","y":25.153,"x":121.766,"a":"中正"},{"c":["景點"],"n":"和平島地質公園","t":"海蝕平台","y":25.158,"x":121.762,"a":"中正"},{"c":["景點"],"n":"望幽谷","t":"山海步道","y":25.145881,"x":121.798147,"a":"中正"},{"c":["景點"],"n":"外木山濱海風景區／海岸步道","t":"平坦棧道段適合長輩","y":25.154345,"x":121.733296,"a":"中山"},{"c":["景點"],"n":"海洋廣場","t":"看港看船免費","y":25.132,"x":121.739,"a":"仁愛"},{"c":["景點","伴手禮"],"n":"委託行商圈／委託行故事館","t":"老商圈文創小店與故事館","y":25.131,"x":121.741,"a":"仁愛"},{"c":["購物"],"n":"基隆東岸廣場","t":"UNIQLO／寶雅等","y":25.131,"x":121.7415,"a":"仁愛"},{"c":["購物"],"n":"家樂福超市 基隆孝二店","t":"超市補水零食","y":25.13,"x":121.74,"a":"仁愛"},{"c":["購物"],"n":"全聯福利中心 基隆仁三店","t":"近廟口","y":25.1288,"x":121.7425,"a":"仁愛"},{"c":["購物"],"n":"仁愛市場","t":"傳統市場小吃與日用品","y":25.1285,"x":121.7435,"a":"仁愛"},{"c":["購物","伴手禮"],"n":"崁仔頂漁市周邊","t":"清晨最熱鬧","y":25.1286,"x":121.7404,"a":"仁愛"},{"c":["購物"],"n":"全聯福利中心 基隆中正店","t":"正濱動線可補貨","y":25.145,"x":121.77,"a":"中正"},{"c":["購物"],"n":"全家便利商店 基隆廟口店","t":"冰水、雨具、廁所資訊","y":25.1284,"x":121.7436,"a":"仁愛"},{"c":["購物"],"n":"寶雅","t":"日用品美妝，小孩小玩具","y":25.131,"x":121.7415,"a":"仁愛"},{"c":["購物"],"n":"碧砂漁港觀光魚市","t":"現撈魚貨","y":25.142,"x":121.796,"a":"中正"},{"c":["伴手禮"],"n":"李鵠餅店","t":"綠豆椪老店，廟口商圈","y":25.129305,"x":121.741757,"a":"仁愛"},{"c":["伴手禮"],"n":"連珍糕餅店","t":"芋泥球等名產，好攜帶","y":25.128844,"x":121.742007,"a":"仁愛"},{"c":["伴手禮"],"n":"海科館／潮境館內商店","t":"海洋主題文創小物，適合小孩","y":25.1425,"x":121.8,"a":"中正"},{"c":["伴手禮"],"n":"正濱彩色屋周邊伴手禮／咖啡店包裝商品","t":"拍照順買小包裝點心","y":25.1524,"x":121.7649,"a":"中正"},{"c":["停車場"],"n":"博愛地下停車場","t":"離廟口步行約1分","y":25.1283,"x":121.743,"a":"仁愛"},{"c":["停車場"],"n":"基隆東岸停車場","t":"東岸廣場共構，步行廟口約5分","y":25.131,"x":121.7415,"a":"仁愛"},{"c":["停車場"],"n":"ViVi PARK 基隆廟口停車場","t":"極近廟口","y":25.1288,"x":121.7425,"a":"仁愛"},{"c":["停車場"],"n":"正濱漁港停車場","t":"彩色屋優先停這","y":25.151,"x":121.765,"a":"中正"},{"c":["停車場"],"n":"和平島公園停車場","t":"入園前停","y":25.158,"x":121.762,"a":"中正"},{"c":["停車場"],"n":"海科館海洋劇場停車場","t":"車位多","y":25.142518,"x":121.800231,"a":"中正"},{"c":["停車場"],"n":"潮境公園停車場","t":"潮境／智能海洋館最近","y":25.1434,"x":121.8034,"a":"中正"},{"c":["停車場"],"n":"基隆和一停車場","t":"正濱與和平島之間備援","y":25.152,"x":121.766,"a":"中正"}]</script>
+<script type="application/json" id="lists">{"小吃":[{"n":"天盛舖營養三明治","t":"炸麵包夾火腿蛋番茄，排隊最長","a":"仁愛","h":1,"q":"天盛舖營養三明治 基隆"},{"n":"邢記鼎邊趖","t":"基隆代表小吃，米漿鍋邊片＋羹料，熱湯適合長輩","a":"仁愛","h":1,"q":"邢記鼎邊趖 基隆"},{"n":"沈記泡泡冰","t":"古早味泡泡冰，綠豆沙牛乳／花生","a":"仁愛","h":1,"q":"沈記泡泡冰 基隆"},{"n":"陳記泡泡冰創始店","t":"另一家手工泡泡冰，可與沈記擇一或各買半份","a":"仁愛","h":1,"q":"陳記泡泡冰創始店 基隆"},{"n":"王記天婦羅","t":"現炸魚漿天婦羅，邊走邊吃","a":"仁愛","h":0,"q":"王記天婦羅 基隆"},{"n":"吳記螃蟹羹油飯","t":"螃蟹羹＋油飯一套，料多","a":"仁愛","h":0,"q":"吳記螃蟹羹油飯 基隆"},{"n":"天一香肉羹順","t":"滷肉飯＋肉羹「一套」，平價老攤","a":"仁愛","h":0,"q":"天一香肉羹順 基隆"},{"n":"廟口花枝羹．大麵炒","t":"花枝羹＋蒜香大麵炒","a":"仁愛","h":0,"q":"廟口花枝羹．大麵炒 基隆"},{"n":"刈包、四神湯","t":"刈包可指定肥瘦","a":"仁愛","h":0,"q":"刈包、四神湯 基隆"},{"n":"廟口自製大腸圈","t":"大腸圈＋吉古拉（基隆魚漿），早上就開","a":"仁愛","h":0,"q":"廟口自製大腸圈 基隆"},{"n":"基隆廟口炭燒蚵仔煎","t":"炭燒香蚵仔煎，份量足、價稍高","a":"仁愛","h":0,"q":"基隆廟口炭燒蚵仔煎 基隆"},{"n":"世盛一口吃香腸","t":"小香腸配蒜頭，小孩也愛","a":"仁愛","h":0,"q":"世盛一口吃香腸 基隆"},{"n":"一口吃天婦羅","t":"小片魚漿炸物，沾醬吃","a":"仁愛","h":0,"q":"一口吃天婦羅 基隆"},{"n":"阿華炒麵","t":"愛四路網紅什錦咖哩炒麵","a":"仁愛","h":0,"q":"阿華炒麵 基隆"},{"n":"基隆廟口碳烤三明治","t":"炭烤吐司三明治，與炸營養三明治不同風味","a":"仁愛","h":0,"q":"基隆廟口碳烤三明治 基隆"},{"n":"廟口魯排骨","t":"咖哩香魯排骨飯，可外帶便當","a":"仁愛","h":0,"q":"廟口魯排骨 基隆"},{"n":"蝦仁羹豬腳蹄膀","t":"豬腳蹄膀＋蝦仁羹，軟嫩好入口","a":"仁愛","h":0,"q":"蝦仁羹豬腳蹄膀 基隆"},{"n":"魯肉飯專家","t":"平價滷肉飯","a":"仁愛","h":0,"q":"魯肉飯專家 基隆"},{"n":"陳家壽司生魚飯","t":"壽司／生魚飯輕食，愛四路側","a":"仁愛","h":0,"q":"陳家壽司生魚飯 基隆"},{"n":"麥當勞／摩斯","t":"小孩菜單、廁所、冷氣","a":"仁愛／中正","h":0,"q":"麥當勞／摩斯 基隆"}],"餐廳":[{"n":"漁品軒海鮮木桶魚餐廳","t":"海科館區域探索館樓上，合菜適合8人","a":"中正","h":1,"q":"漁品軒海鮮木桶魚餐廳 基隆"},{"n":"海之星海鮮 百元熱炒","t":"碧砂旁平價熱炒，可 LINE 訂位","a":"中正","h":1,"q":"海之星海鮮 百元熱炒 基隆"},{"n":"麻江湖火鍋-基隆廟口店","t":"評價高火鍋，8人較好坐","a":"仁愛","h":1,"q":"麻江湖火鍋-基隆廟口店 基隆"},{"n":"架大碗海鮮粥•麵","t":"海鮮粥麵料多，市區好找","a":"中正","h":1,"q":"架大碗海鮮粥•麵 基隆"},{"n":"阿不拉海鮮","t":"在地海鮮好評","a":"仁愛","h":0,"q":"阿不拉海鮮 基隆"},{"n":"輕鬆宴海鮮景觀餐廳","t":"港區合菜、份量足","a":"仁愛","h":0,"q":"輕鬆宴海鮮景觀餐廳 基隆"},{"n":"松山活海鮮","t":"廟口旁海鮮，晚間營業","a":"仁愛","h":0,"q":"松山活海鮮 基隆"},{"n":"叁坪 Sanpin","t":"正濱彩色屋日式海鮮定食","a":"中正","h":0,"q":"叁坪 Sanpin 基隆"},{"n":"傻大姐海景餐廳","t":"潮境／八斗子海景熱炒","a":"中正","h":0,"q":"傻大姐海景餐廳 基隆"},{"n":"環港59活海鮮","t":"正濱—和平島動線海鮮","a":"中正","h":0,"q":"環港59活海鮮 基隆"},{"n":"雞籠海鮮樓","t":"有包廂適合8人","a":"中正","h":0,"q":"雞籠海鮮樓 基隆"},{"n":"小泉海產店","t":"車站一帶老字號熱炒","a":"中山","h":0,"q":"小泉海產店 基隆"},{"n":"昶帝嶺海鮮餐廳","t":"合菜海鮮，店外／周邊較好停","a":"安樂","h":0,"q":"昶帝嶺海鮮餐廳 基隆"},{"n":"安一五郎海鮮店","t":"無菜單老店，先問價","a":"中山","h":0,"q":"安一五郎海鮮店 基隆"},{"n":"南北小吃","t":"古早味海鮮小館","a":"仁愛","h":0,"q":"南北小吃 基隆"},{"n":"星巴克","t":"連鎖咖啡休息點，廁所方便","a":"中正","h":0,"q":"星巴克 基隆"},{"n":"麥當勞","t":"小孩友善、好停商場或公有停車場","a":"仁愛／中正","h":0,"q":"麥當勞 基隆"},{"n":"摩斯漢堡","t":"連鎖速食備援","a":"—","h":0,"q":"摩斯漢堡 基隆"},{"n":"必勝客／連鎖披薩","t":"8人分食方便，假日訂位","a":"—","h":0,"q":"必勝客／連鎖披薩 基隆"},{"n":"東岸廣場美食街／連鎖餐廳","t":"商場內多店可選，**同棟有停車場**最省事","a":"仁愛","h":0,"q":"東岸廣場美食街／連鎖餐廳 基隆"}],"景點":[{"n":"國立海洋科技博物館","t":"親子室內首選","a":"中正","h":1,"q":"國立海洋科技博物館 基隆"},{"n":"潮境智能海洋館","t":"水族館展覽，週二–日","a":"中正","h":1,"q":"潮境智能海洋館 基隆"},{"n":"基隆美術館","t":"2026 有基隆400系列展","a":"中正","h":1,"q":"基隆美術館 基隆"},{"n":"基隆故事館","t":"港都故事常設／特展，室內好走","a":"中正","h":1,"q":"基隆故事館 基隆"},{"n":"正濱漁港色彩屋","t":"彩色屋拍照","a":"中正","h":1,"q":"正濱漁港色彩屋 基隆"},{"n":"和平島地質公園","t":"海蝕平台","a":"中正","h":1,"q":"和平島地質公園 基隆"},{"n":"潮境公園","t":"海景裝置與步道，免費","a":"中正","h":0,"q":"潮境公園 基隆"},{"n":"陽明海洋文化藝術館","t":"古蹟建築＋海運互動展","a":"仁愛","h":0,"q":"陽明海洋文化藝術館 基隆"},{"n":"基隆塔","t":"高空廊道看港","a":"中正","h":0,"q":"基隆塔 基隆"},{"n":"鳶書店","t":"高空選書＋輕食","a":"中正","h":0,"q":"鳶書店 基隆"},{"n":"崆書屋 House K","t":"山坡書屋咖啡景觀","a":"中正","h":0,"q":"崆書屋 House K 基隆"},{"n":"信二防空洞","t":"防空洞展覽路線，涼爽避雨","a":"中正","h":0,"q":"信二防空洞 基隆"},{"n":"必應創作展演空間","t":"文創展演空間","a":"中正","h":0,"q":"必應創作展演空間 基隆"},{"n":"基隆要塞司令官邸","t":"古蹟空間展覽，週三–日","a":"中正","h":0,"q":"基隆要塞司令官邸 基隆"},{"n":"要塞司令部校官眷舍","t":"依活動開放","a":"中正","h":0,"q":"要塞司令部校官眷舍 基隆"},{"n":"阿根納造船廠遺構","t":"只可外圍步道看，禁止進入內部","a":"中正","h":0,"q":"阿根納造船廠遺構 基隆"},{"n":"望幽谷","t":"山海步道","a":"中正","h":0,"q":"望幽谷 基隆"},{"n":"外木山濱海風景區／海岸步道","t":"平坦棧道段適合長輩","a":"中山","h":0,"q":"外木山濱海風景區／海岸步道 基隆"},{"n":"海洋廣場","t":"看港看船免費","a":"仁愛","h":0,"q":"海洋廣場 基隆"},{"n":"委託行商圈／委託行故事館","t":"老商圈文創小店與故事館","a":"仁愛","h":0,"q":"委託行商圈／委託行故事館 基隆"}],"購物":[{"n":"基隆東岸廣場","t":"UNIQLO／寶雅等","a":"仁愛","h":1,"q":"基隆東岸廣場 基隆"},{"n":"家樂福超市 基隆孝二店","t":"超市補水零食","a":"仁愛","h":1,"q":"家樂福超市 基隆孝二店 基隆"},{"n":"全聯福利中心 基隆仁三店","t":"近廟口","a":"仁愛","h":1,"q":"全聯福利中心 基隆仁三店 基隆"},{"n":"仁愛市場","t":"傳統市場小吃與日用品","a":"仁愛","h":1,"q":"仁愛市場 基隆"},{"n":"崁仔頂漁市周邊","t":"清晨最熱鬧","a":"仁愛","h":0,"q":"崁仔頂漁市周邊 基隆"},{"n":"全聯福利中心 基隆中正店","t":"正濱動線可補貨","a":"中正","h":0,"q":"全聯福利中心 基隆中正店 基隆"},{"n":"全家便利商店 基隆廟口店","t":"冰水、雨具、廁所資訊","a":"仁愛","h":0,"q":"全家便利商店 基隆廟口店 基隆"},{"n":"寶雅","t":"日用品美妝，小孩小玩具","a":"仁愛","h":0,"q":"寶雅 基隆"},{"n":"碧砂漁港觀光魚市","t":"現撈魚貨","a":"中正","h":0,"q":"碧砂漁港觀光魚市 基隆"},{"n":"家樂福超市 基隆安樂店","t":"回程大採購","a":"安樂／信義","h":0,"q":"家樂福超市 基隆安樂店 基隆"}],"伴手禮":[{"n":"李鵠餅店","t":"綠豆椪老店，廟口商圈","a":"仁愛","h":1,"q":"李鵠餅店 基隆"},{"n":"連珍糕餅店","t":"芋泥球等名產，好攜帶","a":"仁愛","h":1,"q":"連珍糕餅店 基隆"},{"n":"漁品軒伴手禮","t":"海鮮加工伴手禮","a":"中正","h":1,"q":"漁品軒伴手禮 基隆"},{"n":"崁仔頂周邊乾貨行","t":"比觀光攤鮮","a":"仁愛","h":1,"q":"崁仔頂周邊乾貨行 基隆"},{"n":"海科館／潮境館內商店","t":"海洋主題文創小物，適合小孩","a":"中正","h":0,"q":"海科館／潮境館內商店 基隆"},{"n":"陽明海洋文化藝術館商店","t":"海運主題伴手禮","a":"仁愛","h":0,"q":"陽明海洋文化藝術館商店 基隆"},{"n":"東岸廣場選物／小生活類櫃位","t":"文創小禮物，停車方便","a":"仁愛","h":0,"q":"東岸廣場選物／小生活類櫃位 基隆"},{"n":"委託行商圈選物店","t":"在地選物","a":"仁愛","h":0,"q":"委託行商圈選物店 基隆"},{"n":"正濱彩色屋周邊伴手禮／咖啡店包裝商品","t":"拍照順買小包裝點心","a":"中正","h":0,"q":"正濱彩色屋周邊伴手禮／咖啡店包裝商品 基隆"},{"n":"全聯／家樂福基隆限定零食組合","t":"趕時間可用量販零食當伴手禮備案","a":"仁愛","h":0,"q":"全聯／家樂福基隆限定零食組合 基隆"}],"停車場":[{"n":"博愛地下停車場","t":"離廟口步行約1分","a":"仁愛","h":1,"q":"博愛地下停車場 基隆"},{"n":"基隆東岸停車場","t":"東岸廣場共構，步行廟口約5分","a":"仁愛","h":1,"q":"基隆東岸停車場 基隆"},{"n":"正濱漁港停車場","t":"彩色屋優先停這","a":"中正","h":1,"q":"正濱漁港停車場 基隆"},{"n":"和平島公園停車場","t":"入園前停","a":"中正","h":1,"q":"和平島公園停車場 基隆"},{"n":"海科館海洋劇場停車場","t":"車位多","a":"中正","h":1,"q":"海科館海洋劇場停車場 基隆"},{"n":"ViVi PARK 基隆廟口停車場","t":"極近廟口","a":"仁愛","h":0,"q":"ViVi PARK 基隆廟口停車場 基隆"},{"n":"潮境公園停車場","t":"潮境／智能海洋館最近","a":"中正","h":0,"q":"潮境公園停車場 基隆"},{"n":"基隆和一停車場","t":"正濱與和平島之間備援","a":"中正","h":0,"q":"基隆和一停車場 基隆"}]}</script>
+<script>(function(){
+var P=JSON.parse(document.getElementById('places').textContent);
+var L=JSON.parse(document.getElementById('lists').textContent);
+var S=window.SITE;var IC={"購物":"🛍️","小吃":"🍢","餐廳":"🍽️","景點":"⛩️","伴手禮":"🎁","停車場":"🅿️"};if(S.ic)IC=S.ic;
+var CHIPS=S.chips;
+var ORIG=S.orig;
+var WALK=S.walk, FAR=S.far;
+var sheet=document.getElementById('sheet'),title=document.getElementById('st'),chips=document.getElementById('chips'),body=document.getElementById('sb');
+var here=null,from=null,cat="全部",mode='near';
+function dist(a,b,c,d){var R=6371000,r=Math.PI/180,x=(c-a)*r,y=(d-b)*r,s=Math.sin(x/2)*Math.sin(x/2)+Math.cos(a*r)*Math.cos(c*r)*Math.sin(y/2)*Math.sin(y/2);return 2*R*Math.asin(Math.sqrt(s));}
+function fmt(m){return m<1000?Math.round(m/10)*10+" 公尺":(m<10000?(m/1000).toFixed(1):Math.round(m/1000))+" 公里";}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+var isOpen=false,skipPop=false,scrollY0=0,ticket=0;
+function lockScroll(){scrollY0=window.pageYOffset||document.documentElement.scrollTop||0;var b=document.body.style;b.position='fixed';b.top=(-scrollY0)+'px';b.left='0';b.right='0';b.width='100%';document.documentElement.className+=' lock';}
+function unlockScroll(){var b=document.body.style;b.position='';b.top='';b.left='';b.right='';b.width='';document.documentElement.className=document.documentElement.className.replace(/\s*lock/g,'');window.scrollTo(0,scrollY0);}
+function show(){if(isOpen)doClose();isOpen=true;sheet.className='sheet open';lockScroll();try{history.pushState({near:1},'');}catch(e){}}
+function doClose(){if(!isOpen)return;isOpen=false;ticket++;sheet.className='sheet';unlockScroll();}
+function close(){if(!isOpen)return;doClose();if(history.state&&history.state.near){skipPop=true;try{history.back();}catch(e){skipPop=false;}}}
+window.addEventListener('popstate',function(){if(skipPop){skipPop=false;return;}if(isOpen)doClose();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'||e.keyCode===27)close();});
+function closeBtn(e){if(e){e.preventDefault();e.stopPropagation();}close();}
+function openNear(){
+ mode='near';cat="全部";here=null;from=null;title.textContent='📍 離我最近';
+ chips.style.display='';chips.innerHTML=CHIPS.map(function(k){return '<button type="button" class="chip'+(k===cat?' on':'')+'" data-k="'+k+'">'+(IC[k]?IC[k]+' ':'')+k+'</button>';}).join('');
+ show();locate();
+}
+function originBtns(again){var h='';for(var k in ORIG)h+='<button type="button" class="alt" data-o="'+k+'">'+ORIG[k].ic+' '+(again?'改':'')+'從'+ORIG[k].label+'算</button>';return h;}
+function locate(){
+ var t=++ticket;body.innerHTML='<p class="msg">正在找你的位置…</p>';
+ if(!navigator.geolocation){denied('這支手機無法取得位置。');return;}
+ navigator.geolocation.getCurrentPosition(function(p){if(t!==ticket||!isOpen)return;here=[p.coords.latitude,p.coords.longitude];from=null;render();},function(){if(t!==ticket||!isOpen)return;denied('');},{enableHighAccuracy:true,timeout:15000,maximumAge:60000});
+}
+function denied(extra){body.innerHTML='<p class="msg warn"><b>請允許位置權限</b><br>'+(extra||'到手機設定允許這個網頁使用位置，再按一次「離我最近」。')+'</p><p class="msg">或從下面的地點開始算距離：</p>'+originBtns(false);}
+function render(){
+ var list=P.map(function(p){return{p:p,d:dist(here[0],here[1],p.y,p.x)};}).sort(function(a,b){return a.d-b.d;});
+ var far=list.length&&list[0].d>FAR;
+ var f=list.filter(function(o){return cat==="全部"||o.p.c.indexOf(cat)>=0;}).slice(0,10);
+ var h='';
+ if(from)h+='<p class="msg">'+ORIG[from].ic+' 從<b>'+ORIG[from].n+'</b>算的距離。</p>';
+ else if(far)h+='<p class="msg warn">'+S.farMsg+'</p>';
+ h+=f.map(function(o){var p=o.p;var m=o.d<=WALK?'walking':S.mode;var u='https://www.google.com/maps/dir/?api=1&destination='+p.y+','+p.x+'&travelmode='+m;
+  return '<a class="row" href="'+u+'" target="_blank" rel="noopener"><span class="ri">'+IC[p.c[0]]+'</span><span class="rm"><span class="rn">'+esc(p.n)+'<span class="rarea">'+esc(p.a)+'</span></span><span class="rnote">'+esc(p.t)+'</span></span><span class="rd">'+fmt(o.d)+'<small>'+(o.d<=WALK?'🚶 步行':S.modeLabel)+'</small></span></a>';}).join('');
+ if(!f.length)h+='<p class="msg">這個類別沒有點。</p>';
+ h+=originBtns(true);
+ body.innerHTML=h;body.scrollTop=0;
+}
+function openList(c){
+ mode='list';var anyH=L[c].some(function(r){return r.h;});title.textContent=IC[c]+' '+c+(anyH?'（⭐ 重點推薦在前）':'');chips.style.display='none';chips.innerHTML='';
+ var h='<p class="msg">點一下就在 Google 地圖打開。</p>'+L[c].map(function(r){var u='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(r.q);
+  return '<a class="row" href="'+u+'" target="_blank" rel="noopener"><span class="ri">'+(r.h?'⭐':IC[c])+'</span><span class="rm"><span class="rn">'+esc(r.n)+'<span class="rarea">'+esc(r.a)+'</span></span><span class="rnote">'+esc(r.t)+'</span></span></a>';}).join('');
+ show();body.innerHTML=h;body.scrollTop=0;
+}
+body.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-o]');if(!b)return;e.preventDefault();from=b.getAttribute('data-o');here=ORIG[from].p;render();});
+chips.addEventListener('click',function(e){var b=e.target.closest('.chip');if(!b)return;cat=b.getAttribute('data-k');[].forEach.call(chips.children,function(x){x.classList.toggle('on',x===b);});if(here)render();});
+document.getElementById('sx').addEventListener('click',closeBtn);
+sheet.addEventListener('click',function(e){if(e.target===sheet)closeBtn(e);});
+document.querySelector('.near').addEventListener('click',openNear);
+var MP=window.MAPS||{};
+[].forEach.call(document.querySelectorAll('.btn[data-cat]'),function(a){var c=a.getAttribute('data-cat');
+ if(MP[c]){a.href=MP[c];a.target='_blank';a.rel='noopener';a.removeAttribute('role');}
+ else a.addEventListener('click',function(e){e.preventDefault();openList(c);});});
+})();
+</script>
+</body></html>
